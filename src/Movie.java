@@ -1,29 +1,35 @@
 public class Movie {
-    private String CourseName;
-    private String CourseId;
-    private String CourseCategory;
+    private String MovieName;
+    private String MovieId;
+    private String MovieCategory;
+
+    public Movie(String movieName, String movieId, String movieCategory) {
+        MovieName = movieName;
+        MovieId = movieId;
+        MovieCategory = movieCategory;
+    }
 
     public String getId() {
-        return CourseId;
+        return MovieId;
     }
 
     public void setId(String id) {
-        this.CourseId = id;
+        this.MovieId = id;
     }
 
     public String getName() {
-        return CourseName;
+        return MovieName;
     }
 
     public void setName(String name) {
-        this.CourseName = name;
+        this.MovieName = name;
     }
 
     public String getCategory() {
-        return CourseCategory;
+        return MovieCategory;
     }
 
     public void setCategory(String category) {
-        this.CourseCategory = category;
+        this.MovieCategory = category;
     }
 }

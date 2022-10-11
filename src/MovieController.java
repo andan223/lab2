@@ -7,30 +7,30 @@ public class MovieController {
         this.view = view;
     }
 
-    public void setCourseName(String name){
+    public void setMovieName(String name){
         model.setName(name);
     }
 
-    public String getCourseName(){
+    public String getMovieName(){
         return model.getName();
     }
 
-    public void setCourseId(String id){
+    public void setMovieId(String id){
         model.setId(id);
     }
 
-    public String getCourseId(){
+    public String getMovieId(){
         return model.getId();
     }
 
-    public void setCourseCategory(String category){
+    public void setMovieCategory(String category){
         model.setCategory(category);
     }
 
-    public String getCourseCategory(){
+    public String getMovieCategory(){
         return model.getCategory();
     }
     public void updateView(){
-        view.printCourseDetails(model.getName(), model.getId(), model.getCategory());
+        view.printMovieDetails(model.getName(), model.getId(), model.getCategory());
     }
 }
